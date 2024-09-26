@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "American-Bully-in-green-field_alberto-clemares-exposito_Shutterstock.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
