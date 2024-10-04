@@ -14,15 +14,11 @@ struct SearchView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                LazyVStack {
+                LazyVStack(spacing: 12) {
                     ForEach(viewModel.users) { user in
                         NavigationLink(value: user) {
-                            HStack(spacing: 12) {
-                                Image(user.profileImageUrl ?? "")
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: 40, height: 40)
-                                    .clipShape(Circle())
+                            HStack {
+                                CircularProfileImageView(user: user, size: .xSmall)
                                 
                                 VStack(alignment: .leading) {
                                     Text(user.username)
